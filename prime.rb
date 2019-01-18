@@ -1,7 +1,7 @@
 require 'prime'
-require 'Benchmarking'
+require 'benchmark'
 
-ts Benchmark.measure { 10_000_000.times { Object.new } }
+puts Benchmark.measure { 10_000_000.times { Object.new } }
 def prime?(num)
   Prime.prime?(num)
 end
